@@ -2,7 +2,7 @@ package comunicacion;
 
 import comunicacion.Pictograma;
 
-public abstract class Alfabeto extends Pictograma {
+public class Alfabeto extends Pictograma {
     private String[] letras;
     private String interpretacion;
 

@@ -9,7 +9,7 @@ public class Libro extends Escrito {
     private String edicion;
     private String interpretacion;
 
-    public Libro(String origen,String titulo, String autor, int paginas, String resumen, String coAutor, String editorial, String edicion, String interpretacion) {
+    public Libro(String origen,String titulo, String autor, int paginas, String coAutor, String editorial, String edicion, String interpretacion) {
         super(origen, titulo, autor, paginas);
         this.coAutor = coAutor;
         this.editorial = editorial;
