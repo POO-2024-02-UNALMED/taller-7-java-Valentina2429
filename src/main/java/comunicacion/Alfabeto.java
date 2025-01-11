@@ -25,6 +25,11 @@ public class Alfabeto extends Pictograma {
     }
 
     @Override
+    public String interpretacion() {
+        return interpretacion;
+    }
+
+    @Override
     public String toString() {
         String result = "";
         for (int i = 0; i < letras.length; i++) {
