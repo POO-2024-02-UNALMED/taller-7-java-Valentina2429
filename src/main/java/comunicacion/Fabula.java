@@ -1,6 +1,7 @@
 package comunicacion;
 
 import comunicacion.Escrito;
+import comunicacion.Pictograma;
 
 public class Fabula extends Escrito {
     private String ensenanza;
@@ -32,6 +33,6 @@ public class Fabula extends Escrito {
 
     @Override
     public String toString() {
-        return super.toString() + "\n" + ensenanza;
+        return getOrigen() + "\n"+ getTitulo() + "\n"+ getAutor() + "\n"+ getPaginas() + "\n" + "\n" + ensenanza;
     }
 }

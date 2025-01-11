@@ -1,6 +1,7 @@
 package comunicacion;
 
 import comunicacion.Escrito;
+import comunicacion.Pictograma;
 
 public class Periodico extends Escrito {
     private String fecha;
@@ -42,6 +43,6 @@ public class Periodico extends Escrito {
 
     @Override
     public String toString() {
-        return super.toString() + "\n" + fecha + "\n" + primicia;
+        return getOrigen() + "\n"+ getTitulo() + "\n"+ getAutor() + "\n"+ getPaginas() + "\n" + fecha + "\n" + primicia;
     }
 }
