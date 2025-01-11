@@ -1,11 +1,14 @@
 package comunicacion;
+
+import comunicacion.Escrito;
+
 public class Periodico extends Escrito {
     private String fecha;
     private String primicia;
     private String interpretacion;
 
-    public Periodico(String titulo, String autor, int paginas, String resumen, String fecha, String primicia, String interpretacion) {
-        super(titulo, autor, paginas, resumen);
+    public Periodico(String origen, String titulo, String autor, int paginas, String resumen, String fecha, String primicia, String interpretacion) {
+        super(origen, titulo, autor, paginas);
         this.fecha = fecha;
         this.primicia = primicia;
         this.interpretacion = interpretacion;

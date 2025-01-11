@@ -1,10 +1,13 @@
 package comunicacion;
+
+import comunicacion.Escrito;
+
 public class Fabula extends Escrito {
     private String ensenanza;
     private String interpretacion;
 
-    public Fabula(String titulo, String autor, int paginas, String resumen, String ensenanza, String interpretacion) {
-        super(titulo, autor, paginas, resumen);
+    public Fabula(String origen, String titulo, String autor, int paginas, String resumen, String ensenanza, String interpretacion) {
+        super(origen, titulo, autor, paginas);
         this.ensenanza = ensenanza;
         this.interpretacion = interpretacion;
     }
