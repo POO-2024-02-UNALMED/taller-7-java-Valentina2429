@@ -3,20 +3,20 @@ package comunicacion;
 import comunicacion.Pictograma;
 
 public class Alfabeto extends Pictograma {
-    private String[] letras;
+    private String letras;
     private String interpretacion;
 
-    public Alfabeto(String origen, String interpretacion, String[] letras) {
+    public Alfabeto(String origen, String interpretacion, String letras) {
         super(origen);
         this.interpretacion = interpretacion;
         this.letras = letras;
     }
 
-    public String[] getLetras() {
+    public String getLetras() {
         return letras;
     }
 
-    public void setLetras(String[] letras) {
+    public void setLetras(String letras) {
         this.letras = letras;
     }
 
