@@ -26,6 +26,13 @@ public abstract class Alfabeto extends Pictograma {
 
     @Override
     public String toString() {
-        return String.join(", ", letras);
+        String result = "";
+        for (int i = 0; i < letras.length; i++) {
+            result += letras[i];
+            if (i < letras.length - 1) {
+                result += ", ";
+            }
+        }
+        return result;
     }
 }

@@ -1,4 +1,8 @@
 package comunicacion;
+
+import comunicacion.Escrito;
+import comunicacion.Pictograma;
+
 public class Libro extends Escrito {
     private String coAutor;
     private String editorial;
@@ -49,6 +53,6 @@ public class Libro extends Escrito {
 
     @Override
     public String toString() {
-        return super.toString() + "\n" + coAutor + "\n" + editorial + "\n" + edicion;
+        return getOrigen() + "\n"+ getTitulo() + "\n"+ getAutor() + "\n"+ getPaginas() + "\n" + coAutor + "\n" + editorial + "\n" + edicion;
     }
 }
