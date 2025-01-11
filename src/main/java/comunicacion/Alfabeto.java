@@ -1,9 +1,14 @@
 package comunicacion;
+
+import comunicacion.Pictograma;
+
 public abstract class Alfabeto extends Pictograma {
     private String[] letras;
+    private String interpretacion;
 
     public Alfabeto(String origen, String interpretacion, String[] letras) {
-        super(origen, interpretacion);
+        super(origen);
+        this.interpretacion = interpretacion;
         this.letras = letras;
     }
 
