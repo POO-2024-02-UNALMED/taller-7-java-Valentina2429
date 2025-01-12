@@ -17,7 +17,7 @@ public class Libro extends Escrito {
         this.interpretacion = interpretacion;
     }
 
-    public String getCoAutor() {
+    public String getCo_Autor() {
         return coAutor;
     }
 
